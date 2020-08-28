@@ -1,0 +1,4 @@
+#Rewrite everything to https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{www.leendertcoenen.be}%{} [L,R=301]
