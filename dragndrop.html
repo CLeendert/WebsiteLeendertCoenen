@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/styles/dragndrop.css" type="text/css">
+</head>
+	
+<body>
+
+	<div class="container">
+	
+		    <div class="dates-container">
+
+                <div class = "dates-item"> 1 Oktober </div>
+                <div class = "dates-item"> 12 Oktober </div>
+                <div class = "dates-item"> 15 Oktober </div>
+                <div class = "dates-item"> 18 Oktober </div>
+            </div>
+        <div class = "dropzone-container">
+            <div class="dropzone">
+                
+                <div class="card-wrapper">
+                    <article class="card" onmousedown="moveCard(event, this)">
+                        <div class="card__label card__label--is-red"></div>
+                    </article>
+                </div>
+            
+                <div class="card-wrapper">
+                    <article class="card" onmousedown="moveCard(event, this)">
+                        <div class="card__label card__label--is-yellow"></div>
+                        <div>tst</div>
+                    </article>
+                </div>
+                
+                <div class="card-wrapper">
+                    <article class="card" onmousedown="moveCard(event, this)">
+                        <div class="card__label card__label--is-green"></div>
+                    </article>
+                </div>
+            </div>
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+            <div class="dropzone"> 
+                <div class="card-wrapper">
+                    <article class="card" onmousedown="moveCard(event, this)">
+                        <div class="card__label card__label--is-blue"></div>
+                    </article>
+                </div>
+                
+                <div class="card-wrapper">
+                    <article class="card" onmousedown="moveCard(event, this)">
+                        <div class="card__label card__label--is-purple"></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+	</div>
+    <script type="text/javascript" src="assets/scripts/dragndrop.js"></script>
+</body>
+</html>

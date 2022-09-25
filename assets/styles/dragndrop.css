@@ -1,0 +1,123 @@
+body {
+    background: #e3e3e3;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #fafafa;
+    border-radius: 7px;
+    box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.05);
+    /* display: flex; */
+    padding: 30px;
+    margin: auto;
+    /* overflow-x: scroll; */
+    touch-action: none;
+    width: 1000px;
+    z-index: 9010;
+  }
+  .dates-container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 200px;
+    padding: 8px;
+    touch-action: none;
+  }
+  .dates-item {
+    /* border: 2px dotted #e3e3e3; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 200px;
+    padding: 8px;
+    touch-action: none;
+  }
+  
+  .dropzone-container {
+    border: 2px dotted #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 200px;
+    padding: 8px;
+    touch-action: none;
+  }
+  
+  .dropzone {
+    border: 2px dotted #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 200px;
+    padding: 8px;
+    touch-action: none;
+  }
+  .dropzone:nth-child(2) {
+    margin: 0 15px;
+  }
+  
+  div.card-wrapper {
+    margin-bottom: 8px;
+  }
+  
+  article.card {
+    background: #ebebeb;
+    border: 2px solid #ebebeb;
+    border-radius: 8px;
+    contain: layout;
+    cursor: pointer;
+    height: 65px;
+    padding: 5px 8px;
+    transition: border-color 330ms ease-in;
+    will-change: transform;
+    width: 200px;
+  }
+  article.card:hover {
+    border-color: #3fc35f;
+  }
+  article.card:last-child {
+    margin-bottom: 0;
+  }
+  article.card.card--is-moving {
+    border-color: #3fc35f;
+    cursor: grabbing;
+    position: absolute;
+    transform: rotate(5deg);
+    z-index: 2147483647;
+  }
+ 
+
+  div.card__label {
+    border-radius: 100%;
+    height: 15px;
+    opacity: 0.8;
+    width: 15px;
+  }
+  div.card__label--is-red {
+    background: linear-gradient(180deg, #f44881, #ec454f);
+  }
+  div.card__label--is-yellow {
+    background: linear-gradient(0deg, #f19a1a, #ffc73c);
+  }
+  div.card__label--is-green {
+    background: linear-gradient(180deg, #6edcc4, #1aab8b);
+  }
+  div.card__label--is-blue {
+    background: linear-gradient(180deg, #21c8f6, #637bff);
+  }
+  div.card__label--is-purple {
+    background: linear-gradient(0deg, #8b60ed, #b372bd);
+  }
+  
+  div.placeholder {
+    border: 2px dotted #ebebeb;
+    border-radius: 8px;
+    display: none;
+    cursor: pointer;
+    height: 65px;
+    padding: 5px 8px;
+  }
